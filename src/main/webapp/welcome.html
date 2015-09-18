@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Success</title>
+
+        <link type="text/css" rel="stylesheet" href="webjars/bootstrap/3.3.1/css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/common.css" />
+        <script type="text/javascript" src="webjars/vue/0.12.6/dist/vue.min.js" ></script>
+        <script type="text/javascript" src="webjars/jquery/2.1.1/jquery.min.js" ></script>
+        <script type="text/javascript" src="js/common.js" ></script>
+        <meta charset="UTF-8">
+    </head>
+    <body id="app">
+     <app-header user="{{user}}"></app-header>
+        <div class="container" id="main_content">
+            <h1>hello {{user}}!</h1>
+            <h2>Notifications</h2>
+            <ul>
+                <li v-repeat="notifications">{{$value}}</li>
+            </ul>
+        </div>
+        <app-footer></app-footer>
+        <script type="text/javascript" src="js/welcome.js"></script>
+    </body>
+</html>
