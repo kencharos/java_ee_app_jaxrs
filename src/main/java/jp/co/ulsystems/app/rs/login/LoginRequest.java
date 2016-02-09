@@ -17,4 +17,5 @@ public class LoginRequest {
     public String password;
     
     
+    
 }
